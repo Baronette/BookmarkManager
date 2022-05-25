@@ -9,7 +9,7 @@ const BookmarkRow = ({ bookmark, onDeleteClick, onUpdateClick}) => {
     }
     return (<tr>
         <td>{editState ? <input className="form-control" type='text' defaultValue={bookmark.title} onChange={onTextChange} /> : bookmark.title}</td>
-        <td><a href={b.url} target="_blank"></a></td>
+        <td><a href={bookmark.url} target="_blank"></a></td>
         <td>
             {!editState && <button className='btn btn-success mr-3' onClick={() => setEditState(true)}>Edit Title</button>}
 
