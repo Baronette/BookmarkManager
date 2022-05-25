@@ -23,7 +23,7 @@ const Home = () => {
                 </thead>
                 <tbody>
                     {bookmarks && bookmarks.map((b,i) => <tr key={i}>
-                        <td><Link to={b.url}>{b.url}</Link></td>
+                        <td><a href={b.url} target="_blank">{b.url}</a></td>
                         <td>{b.count}</td>
                     </tr>
                     )
